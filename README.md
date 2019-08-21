@@ -26,6 +26,17 @@ create album controller
 - in src/main/resources/application.properties 
 - add your unique postgres login and password. 
 
+## for basic functionality go to:
+- navigate on a browser to : http://localhost:8080/
+- You will see the root!
+- navigate on a browser to : http://localhost:8080/sayHello
+- It will say hello!
+- navigate on a browser to : http://localhost:8080/capitalize/{message here}
+- Any message you type will be capitalized.
+- navigate on a browser to : http://localhost:8080/reverse/{mirror this}
+- anything you type will be reversed, by word.
+
+
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
