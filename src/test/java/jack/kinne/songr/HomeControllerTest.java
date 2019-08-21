@@ -1,5 +1,6 @@
 package jack.kinne.songr;
 
+import jack.kinne.songr.controllers.HomeController;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

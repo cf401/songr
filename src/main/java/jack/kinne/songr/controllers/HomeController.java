@@ -1,4 +1,4 @@
-package jack.kinne.songr;
+package jack.kinne.songr.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
