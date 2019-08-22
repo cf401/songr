@@ -3,8 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>All The Albums</title>
+
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="modules.css">
 </head>
 <body>
+<nav>
+    <ul>
+        <li><a href="/songs">Songs</a></li>
+        <li><a href="/sayHello">Say Hello</a></li>
+        <li><a href="/albums">Albums</a></li>
+    </ul>
+</nav>
+
 <h1>All The Albums. All of them.</h1>
 
 <div th:each="album : ${albums}" class="album">
@@ -14,17 +26,5 @@
     </p>
 </div>
 
-<div>
-    <form method="POST" action="/albums">
-        Title:<input name="title" />
-        Artist:<input name="artist" />
-        Song Count:<input type="number" name="songCount" />
-        Seconds Length:<input type="range" name="secondsLength" min="0" max="800" />
-        Image URL:<input type="url" name="imageUrl" />
-
-        <input type="submit" />
-        <input type="reset">
-    </form>
-</div>
 </body>
 </html>

@@ -3,6 +3,7 @@
 Demonstrate basic understanding of Spring M.V.C.
 create album model
 create album controller
+create a song model
 
 ## Challenge Description
 <!-- Description of the challenge -->
@@ -14,6 +15,12 @@ create album controller
 - write an album model
 - write a album controller
 - write a page to display and show data
+
+- write a song model
+- A user should be able to see information about all the songs on the site.
+- A user should be able to view a page with data about one particular album.
+- A user should be able to add songs to an album.
+- A user should be able to see the songs that belong to an album when looking at that album.
 
 ```
 
@@ -35,6 +42,12 @@ create album controller
 - Any message you type will be capitalized.
 - navigate on a browser to : http://localhost:8080/reverse/{mirror this}
 - anything you type will be reversed, by word.
+- navigate on a browser to : http://localhost:8080/songs
+- show and create songs
+- navigate on a browser to : http://localhost:8080//albums/{id}
+- see any particular album by ID
+- navigate on a browser to : http://localhost:8080//albums
+- see all albums
 
 
 
@@ -47,7 +60,10 @@ create album controller
 - create class for model album
 - autowire to PSQL
 
+- create a song model
+- link song model to album
+- provide visible data from PSQL back to user
+
 ## Credits and Contributions
-Brandon Hurrington
-@BombiBear
-Nhu Trinh
+Nick Paro
+

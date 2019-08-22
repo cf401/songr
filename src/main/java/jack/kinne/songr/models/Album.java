@@ -1,10 +1,7 @@
 package jack.kinne.songr.models;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import java.sql.Date;
+import javax.persistence.*;
+import java.util.List;
 
 @Entity
 public class Album {
@@ -15,8 +12,11 @@ public class Album {
     String title;
     String artist;
     int songCount;
-    int secondsLength;
+    int lengthSeconds;
     String imageUrl;
+
+    @OneToMany(fetch = FetchType.EAGER, mappedBy = "album")
+    List<Song> songs;
 
     //An Album has a title,
     // an artist,
@@ -27,11 +27,11 @@ public class Album {
     public Album() {
     }
 
-    public Album(String title, String artist, int songCount, int secondsLength, String imageUrl) {
+    public Album(String title, String artist, int songCount, int lengthSeconds, String imageUrl) {
         this.title = title;
         this.artist = artist;
         this.songCount = songCount;
-        this.secondsLength = secondsLength;
+        this.lengthSeconds = lengthSeconds;
         this.imageUrl = imageUrl;
     }
 
@@ -48,8 +48,8 @@ public class Album {
         this.songCount = songCount;
     }
 
-    public void setSecondsLength(int secondsLength) {
-        this.secondsLength = secondsLength;
+    public void setSecondsLength(int lengthSeconds) {
+        this.lengthSeconds = lengthSeconds;
     }
 
     public void setImageUrl(String imageUrl) {
@@ -69,7 +69,7 @@ public class Album {
     }
 
     public int getSecondsLength() {
-        return secondsLength;
+        return lengthSeconds;
     }
 
     public String getImageUrl() {
