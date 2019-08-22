@@ -42,6 +42,12 @@ create a song model
 - Any message you type will be capitalized.
 - navigate on a browser to : http://localhost:8080/reverse/{mirror this}
 - anything you type will be reversed, by word.
+- navigate on a browser to : http://localhost:8080/songs
+- show and create songs
+- navigate on a browser to : http://localhost:8080//albums/{id}
+- see any particular album by ID
+- navigate on a browser to : http://localhost:8080//albums
+- see all albums
 
 
 
